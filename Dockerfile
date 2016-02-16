@@ -11,5 +11,4 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod 0700 /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["cp", "/secret/etc/ppp/chap-secrets", "/etc/ppp/chap-secrets"]
 CMD ["pptpd", "--fg"]
